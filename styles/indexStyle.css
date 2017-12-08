@@ -1,0 +1,15 @@
+h1 {
+    font-size: 60px;
+    text-align: center;
+    padding: 100px;
+
+    border: 1px solid black;
+    margin: 10px;
+}
+
+p{
+    text-align:center;
+
+    border: 1px solid purple;
+    margin: 100px;    
+} 
