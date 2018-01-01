@@ -1,0 +1,49 @@
+html {
+    height: 100%;
+}
+
+.nav {
+    color: white;
+}
+
+#navbarNav {
+    justify-content: flex-end;
+}
+
+body {
+    height: 95%;
+}
+
+.parallax-window {
+    height: 100%;
+    min-height: 400px;
+    background: transparent;
+    display: flex;
+}
+
+.parallax-window h1 {
+    text-align: center;
+    font-size: 72px;
+}
+
+.parallax-window p {
+    text-align: center;
+    font-size: 25px;
+}
+
+#front-splash{
+    color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#about {
+    background: white;
+    border-radius: 25px;
+    margin: 1%;
+    flex: 1;
+}
+
+

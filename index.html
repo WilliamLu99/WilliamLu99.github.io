@@ -1,64 +1,58 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=divice-width, initial-scale=1">
-        <title> William's Website </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="styles/indexStyle.css" rel="stylesheet">
-    </head>
-    <body>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img class="carousel-img" src="assets/code1.jpg">
-                    <div class="carousel-caption">
-                        <h3>Tree</h3>
-                    </div>
-                </div>
+        <link rel="stylesheet" href="styles/main.css">
 
-                <div class="item">
-                    <img class="carousel-img" src="assets/code2.jpg">
-                    <div class="carousel-caption">
-                        <h3>Another Tree</h3>
-                    </div>
-                </div>
+        <title>William Lu</title>
 
-                <div class="item">
-                    <img class="carousel-img" src="assets/code3.jpg">
-                    <div class="carousel-caption">
-                        <h3>..And Another Tree</h3>
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">William Lu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded"false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Resume</a>
+                    </li>
+                </ul>
             </div>
+        </nav>
+    </head>
 
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
+    <body> 
+        <div class="parallax-window" data-parallax="scroll" data-image-src="assets/space-photo-1.jpeg">
+            <div id="front-splash">
+                <h1 class="display-1">William Lu</h1>
+                <p>Shopify DevDegree</p>
+            </div>
         </div>
-                
-        <p>This is my site. Maybe you'll wish to take a look around, we have cookies! (Not really, this website
-        doesn't support sessions)</p>
-        <a href="contact.html">Contact</a>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="assets/space-photo-1.jpeg">
+            <div id="about">
+                <h1>Hello World!</h1>
+                <p>balkasdfjals;fkjaslkdfjaslkfjaslkdfjaslkfjalfjkasdlkfjasfaslfjaslfjasklfjasldkfjasdlkfj</p>
+            </div>
+        </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="bower_components/bootstrap/js/carousel.js"></script>
-        <script src="bower_components/bootstrap/js/transition.js"></script>
-        <script src="scripts/indexStyle.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+        <!-- parallax.js, used to include the parralax scroll effect -->
+        <script src="scripts/parallax.min.js"></script>
     </body>
 </html>
 
