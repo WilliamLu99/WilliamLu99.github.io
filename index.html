@@ -5,27 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
 
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="styles/main.css">
 
         <title>William Lu</title>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">William Lu</a>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#front">William Lu</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded"false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span> 
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link active">Home</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Contact</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Resume</a>
+                        <a class="nav-link" href="#resume">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -33,26 +34,146 @@
     </head>
 
     <body> 
-        <div class="parallax-window" data-parallax="scroll" data-image-src="assets/space-photo-1.jpeg">
-            <div id="front-splash">
+        <div id="front" class="parallax-window" data-parallax="scroll" data-image-src="assets/space-photo-1.jpeg">
+            <div class="title-splash">
                 <h1 class="display-1">William Lu</h1>
                 <p>Shopify DevDegree</p>
             </div>
         </div>
-        <div class="parallax-window" data-parallax="scroll" data-image-src="assets/space-photo-1.jpeg">
-            <div id="about">
-                <h1>Hello World!</h1>
-                <p>balkasdfjals;fkjaslkdfjaslkfjaslkdfjaslkfjalfjkasdlkfjasfaslfjaslfjasklfjasldkfjasdlkfj</p>
+        <div id="about" class="text-section">
+            <h1>Hello World!</h1>
+            <div id="profile-container">
+                <img src="assets/profile-pic.jpg" class="img-circle">
+                <p>
+                   I'm William Lu, an aspiring software developer who thinks programming is pretty cool! 
+                   Computers aren't bad either!
+
+                   <br><br>
+
+                   Currently, I am a student of Carleton University, and an intern at Shopify, as a part of the
+                   new <a href="https://www.mydevlife.ca/">DevDegree Program</a>.
+                   
+                   <br><br>
+
+                   Check out my <a href="https://github.com/WilliamLu99?tab=repositories">github account</a>. 
+
+                </p>
+            </div>
+        </div>
+
+        <div id="projects-splash" class="parallax-window" data-parallax="scroll" data-image-src="assets/code-photo-4.jpg">
+            <div class="title-splash">
+                <h1 class="display-1">Projects</h1>
+            </div>
+        </div>
+
+        <div id="projects" class="text-section">
+            <h1>CloudShare</h1>
+
+            <br>
+            <h3>What is it?</h3>
+            <p>
+                CloudShare is a secure file storage and sharing service. All uploaded files are symmetrically encrypted
+                with AES, decryptable only by the user. It was built on Ruby on Rails, a web-application framework 
+                built using the Ruby language. 
+            </p>
+
+            <h3>Who built it?</h3>
+            <p>
+                CloudShare is a project created by myself and Frank Yu. The github repo can be found 
+                <a href="https://github.com/WilliamLu99/CloudShare">here</a>.
+            </p>
+
+            <div id="cloudshare-cards"> 
+                <div class="card"> 
+                    <img class="card-img-top" src="assets/CloudShare/1.png">
+                        <div class="card-body">
+                            <p>
+                               The sign up page. The site would allow user's to create accounts, with an emphasis
+                               on security–passwords were hashed and salted with the bcrypt gem.
+
+                               <br><br>
+
+                               The front end portion of this site was built using twitter's bootstrap framework. 
+                               Heroku was used to host the site.
+                            </p>
+                        </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img-top" src="assets/CloudShare/2.png">
+                        <div class="card-body">
+                            <p>
+                                User's all had a public and private key upon signup. The private key would be
+                                symmetrically encrypted using the user's own password, so that even us, the site
+                                devs, could have no access to it.
+
+                                <br><br>
+
+                                Files could be uploaded to the site, where they would be symmetrically encrypted
+                                using the user's public key. If the user wanted to download it, they would have
+                                to enter their password.
+
+                                <br><br>
+
+                                CloudShare also supports file sharing. This is done in an encrypted manner through
+                                RSA. 
+                            </p>
+                        </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img-top" src="assets/CloudShare/3.png">
+                        <div class="card-body">
+                            <p>
+                               User's were allocated with a certain amount of storage available for them to use.
+                               Any more, and the site would stop the file from being saved upon the site. 
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="resume-splash" class="parallax-window" data-parallax="scroll" data-image-src="assets/code-photo-3.jpg">
+            <div class="title-splash">
+                <h1 class="display-1">Resume</h1>
+            </div>
+        </div>
+
+        <div id="resume">
+            <br>
+            <div id="resume-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="carousel-img" src="assets/Resume/1.jpeg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-img" src="assets/Resume/2.jpeg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-img" src="assets/Resume/3.jpeg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls for the carousel -->
+            <div id="resume-buttons">
+                <a class="btn btn-outline-info" href="#resume-carousel" data-slide="prev">Previous</a>
+                <a class="btn btn-outline-primary" href="assets/Resume.pdf" download>Download</a>
+                <a class="btn btn-outline-info" href="#resume-carousel" data-slide="next">Next</a>
             </div>
         </div>
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" ></script>
 
         <!-- parallax.js, used to include the parralax scroll effect -->
         <script src="scripts/parallax.min.js"></script>
+
+        <!-- Custom javascript -->
+        <script src="scripts/main.js"></script>
     </body>
 </html>
 

@@ -1,4 +1,5 @@
-html {
+html, body {
+    box-sizing: border;
     height: 100%;
 }
 
@@ -10,12 +11,8 @@ html {
     justify-content: flex-end;
 }
 
-body {
-    height: 95%;
-}
-
 .parallax-window {
-    height: 100%;
+    height: 50%;
     min-height: 400px;
     background: transparent;
     display: flex;
@@ -23,7 +20,6 @@ body {
 
 .parallax-window h1 {
     text-align: center;
-    font-size: 72px;
 }
 
 .parallax-window p {
@@ -31,7 +27,11 @@ body {
     font-size: 25px;
 }
 
-#front-splash{
+#front {
+    height: 100%; 
+}
+
+.title-splash {
     color: white;
     margin: auto;
     display: flex;
@@ -39,11 +39,69 @@ body {
     flex: 1;
 }
 
-#about {
-    background: white;
-    border-radius: 25px;
+.text-section {
+    flex: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.text-section h1 {
+    text-align: left;
+    border-bottom: 1px solid black; 
+}
+
+#profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+#profile-container p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#cloudshare-cards {
+    display: flex;
+}
+
+.card {
     margin: 1%;
+    width: 25%;
+
     flex: 1;
 }
 
+#resume {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
 
+.carousel-img {
+    display: block;
+    max-height: 90vh;
+    max-width: 65vh;
+    width: 90%;
+    margin: auto;
+}
+
+#resume-buttons {
+    display: flex;
+}
+
+.btn {
+    min-width: 6em;
+    margin: auto;
+}
